@@ -21,13 +21,14 @@ def linux_get_ipv4_octets():
 	InOctets
 	24471754
 	'''
-
 	with open("/proc/net/netstat") as filein:
 		for line in filein.readlines():
 			if line.find("IpExt")>=0:
 				value = line.split()[7]
 				if value.isnumeric():
-					return(int(value))
+					return int(value)
+	# we should not get here:
+	return 0
 
 def linux_get_ipv6_octets():
 	'''
@@ -39,7 +40,9 @@ def linux_get_ipv6_octets():
 			if line.find("Ip6InOctets")>=0:
 				value = line.strip().split()[-1]
 				if value.isnumeric():
-					return(int(value))
+					return int(value)
+	# we should not get here:
+	return 0
 
 
 
@@ -50,9 +53,11 @@ if platform.system() == "Windows":
 	print(ipv4, ipv6, "\nIPv6 percentage of total traffic:", int(100*ipv6/(ipv4+ipv6)),"%")
 elif platform.system() == "Linux":
 	print("Linux")
-	ipv4=linux_get_ipv4_octets()
-	ipv6=linux_get_ipv6_octets()
+	ipv4 = linux_get_ipv4_octets()
+	ipv6 = linux_get_ipv6_octets()
 	print(ipv4, ipv6, "\nIPv6 percentage of total traffic:", int(100*ipv6/(ipv4+ipv6)),"%")
+else:
+	print("sorry, other, non-supported platform", platform.system())
 
 
 
