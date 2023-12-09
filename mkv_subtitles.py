@@ -21,7 +21,13 @@ if not os.path.isfile(inputmkvfile):
 
 subfounds ={}
 searchstring = b'S_TEXT'  # this is the subtitle indicator. The subtitle language is somewhere before or after that...
+
+# "language", like "slo"
 preambleforsublanguage = b"\xb5\x9c\x83"  # this is binary string that is right before the subtitle language
+# TODO take care of the \x83 part!!!
+
+# "language_ietf", like "sk"
+preamble2 =b"\x22\xb5\x9d" # and after a \x82 ... ending "2" for ... 2 bytes language. And \x85 for 5 characters like es-ES
 
 startpos = 0
 
@@ -47,6 +53,20 @@ for i in range(100): # max 100 subtitles
                 subfounds[sublanguage] = True
         except:
             pass
+    else:
+        # can we find a 2 byte language then ... ?
+        twobytepos = longerstring.find(preamble2)
+        if twobytepos >= 0:
+            length = longerstring[twobytepos+3] - 8*16
+            print(length)
+            try:
+                sublanguage = longerstring[twobytepos+4 : twobytepos+4+length].decode('utf-8')
+                print(sublanguage)
+                subfounds[sublanguage] = True
+            except:
+                pass
+
+
     startpos = pos + 10  # skip a bit further
 
 
