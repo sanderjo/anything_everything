@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 
+'''
+finds and prints subtitles found in a .mkv file
+Needs the binary "mkvmerge", part of mkvtoolnix, available for Linux, MacOS and Windows
+'''
+
 import os
 import json
 import sys
@@ -39,4 +44,4 @@ if not subfounds:
 else:
     for sub in subfounds:
         print(sub, end=" ")
-    print("\n")
+    print(" ")
