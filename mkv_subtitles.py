@@ -15,7 +15,7 @@ except:
     inputmkvfile = "~/something.mkv"
 
 if not os.path.isfile(inputmkvfile):
-    sys.exit(1)
+    sys.exit("file does not exist " + inputmkvfile)
 
 
 print("Inspecting", inputmkvfile)
