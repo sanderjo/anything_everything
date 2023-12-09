@@ -31,7 +31,7 @@ def iperf3_downstream_speed(server='ams.speedtest.clouvider.net', duration=3):
     client.reverse=True # Downstream
 
     portlist = list(range(5200, 5209 + 1))
-    for _ in range(4):
+    for _ in range(5):
         myport = random.choice(portlist)
         portlist.remove(myport)
         client.port = myport
@@ -47,9 +47,9 @@ def iperf3_downstream_speed(server='ams.speedtest.clouvider.net', duration=3):
 
 if __name__ == "__main__":
     print("Let's go ...")
-    print("Downstream speed [Mbps]", iperf3_downstream_speed("ams.speedtest.clouvider.net", 3))
+    #print("Downstream speed [Mbps]", iperf3_downstream_speed("ams.speedtest.clouvider.net", 3))
     print("Downstream speed [Mbps]", iperf3_downstream_speed("fra.speedtest.clouvider.net", 3))
     print("Downstream speed [Mbps]", iperf3_downstream_speed("nyc.speedtest.clouvider.net", 3))
-    print("Downstream speed [Mbps]", iperf3_downstream_speed("la.speedtest.clouvider.net", 3))
+    #print("Downstream speed [Mbps]", iperf3_downstream_speed("la.speedtest.clouvider.net", 3))
 
-    print("Downstream speed [Mbps]", iperf3_downstream_speed())
+    #print("Downstream speed [Mbps]", iperf3_downstream_speed())

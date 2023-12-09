@@ -1,3 +1,10 @@
+#!/usr/bin/env python3
+
+'''
+Prints the amounts of IPv4 and IPv6 traffic, plus percentage IPv6 of total traffic
+
+'''
+
 import platform
 import os
 
@@ -5,15 +12,15 @@ def windows_get_ipv4_octets():
 	cmd = "netsh interface ipv4 show ipstats"
 	for thisline in os.popen(cmd).readlines():
 		if thisline.find("In Receives")>=0:
-			value = int(thisline.strip().split()[-1])
-			return value
+			return int(thisline.strip().split()[-1])
+
 
 def windows_get_ipv6_octets():
 	cmd = "netsh interface ipv6 show ipstats"
 	for thisline in os.popen(cmd).readlines():
 		if thisline.find("In Receives")>=0:
-			value = int(thisline.strip().split()[-1])
-			return value
+			return int(thisline.strip().split()[-1])
+
 
 def linux_get_ipv4_octets():
 	'''
@@ -50,12 +57,14 @@ if platform.system() == "Windows":
 	print("Windows!!!")
 	ipv4 = windows_get_ipv4_octets()
 	ipv6 = windows_get_ipv6_octets()
-	print(ipv4, ipv6, "\nIPv6 percentage of total traffic:", int(100*ipv6/(ipv4+ipv6)),"%")
+	percentage_ipv6 = int(100*ipv6/(ipv4+ipv6))
+	print(ipv4, ipv6, "\nIPv6 percentage of total traffic:", percentage_ipv6 ,"%")
 elif platform.system() == "Linux":
 	print("Linux")
 	ipv4 = linux_get_ipv4_octets()
 	ipv6 = linux_get_ipv6_octets()
-	print(ipv4, ipv6, "\nIPv6 percentage of total traffic:", int(100*ipv6/(ipv4+ipv6)),"%")
+	percentage_ipv6 = int(100*ipv6/(ipv4+ipv6))
+	print(ipv4, ipv6, "\nIPv6 percentage of total traffic:", percentage_ipv6 ,"%")
 else:
 	print("sorry, other, non-supported platform", platform.system())
 
