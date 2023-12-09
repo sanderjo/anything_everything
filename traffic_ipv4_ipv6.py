@@ -63,8 +63,9 @@ elif platform.system() == "Linux":
 	print("Linux")
 	ipv4 = linux_get_ipv4_octets()
 	ipv6 = linux_get_ipv6_octets()
-	percentage_ipv6 = int(100*ipv6/(ipv4+ipv6))
-	print(ipv4, ipv6, "\nIPv6 percentage of total traffic:", percentage_ipv6 ,"%")
+	percentage_ipv6 = 100*ipv6/(ipv4+ipv6)
+	print(f"IPv4 giga-octets {ipv4/1024/1024/1024:.2f}, IPv6 giga-octets {ipv6/1024/1024/1024:.2f}")
+	print(f"IPv6 percentage of total traffic: {percentage_ipv6:.2f} %")
 else:
 	print("sorry, other, non-supported platform", platform.system())
 
