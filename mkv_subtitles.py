@@ -25,6 +25,7 @@ searchstring = b'S_TEXT'  # this is the subtitle indicator. The subtitle languag
 # "language", like "slo"
 preambleforsublanguage = b"\xb5\x9c\x83"  # this is binary string that is right before the subtitle language
 # TODO take care of the \x83 part!!!
+# preamble_lang = b"\x22\xb5\x9c" # with "\x83" after that for 3-char language
 
 # "language_ietf", like "sk"
 preamble2 =b"\x22\xb5\x9d" # and after a \x82 ... ending "2" for ... 2 bytes language. And \x85 for 5 characters like es-ES
