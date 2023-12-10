@@ -22,9 +22,7 @@ if not os.path.isfile(inputmkvfile):
 subfounds ={}
 search_s_text = b'S_TEXT'  # this is the subtitle indicator. The subtitle language is somewhere before or after that...
 
-# "language", like "slo"
-#preamble_lang = b"\xb5\x9c\x83"  # this is binary string that is right before the subtitle language
-# TODO take care of the \x83 part!!!
+# "language", like "slo", most of the time 3-character
 preamble_lang = b"\x22\xb5\x9c" # with "\x83" after that for 3-char language
 
 
