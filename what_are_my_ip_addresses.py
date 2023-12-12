@@ -31,12 +31,12 @@ $ curl -6 "https://www.appelboor.com/cgi-bin/what_is_my_ip.py?ipv6-forced"
 r = requests.get(f"https://{testhost}/{testbaseURL}?noippreference")
 print(r.content.decode('utf-8'))
 
-# connect via IPv4 address
+# force-connect via IPv4 address
 testhostipv4 = socket.getaddrinfo(testhost, 443, family=socket.AF_INET, proto=socket.IPPROTO_TCP)[0][4][0] # First ipv4 address of testhost
 r = requests.get(f"http://{testhostipv4}/{testbaseURL}?ipv4test", headers={'host': testhost}) # http, not https ... TODO get it working with https
 print(r.content.decode('utf-8'))
 
-# connect via IPv6 address
+# force-connect via IPv6 address
 testhostipv6 = socket.getaddrinfo(testhost, 443, family=socket.AF_INET6, proto=socket.IPPROTO_TCP)[0][4][0] # First ipv6 address of testhost
 r = requests.get(f"http://[{testhostipv6}]/{testbaseURL}?ipv6test", headers={'host': testhost}) # http, not https
 print(r.content.decode('utf-8'))
