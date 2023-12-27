@@ -12,7 +12,7 @@ import sys
 testhost = "self-test.sabnzbd.org"
 testbaseURL = "/"
 
-#testhost ="www.appelboor.com"
+testhost ="www.appelboor.com"
 testbaseURL = "/cgi-bin/what_is_my_ip.py"
 
 '''
@@ -34,10 +34,10 @@ print(r.content.decode('utf-8'))
 # force-connect via IPv4 address
 testhostipv4 = socket.getaddrinfo(testhost, 443, family=socket.AF_INET, proto=socket.IPPROTO_TCP)[0][4][0] # First ipv4 address of testhost
 r = requests.get(f"http://{testhostipv4}{testbaseURL}?ipv4test", headers={'host': testhost}) # http, not https ... TODO get it working with https
-print(r.content.decode('utf-8'))
+print("Public IPv4:", r.content.decode('utf-8'))
 
 # force-connect via IPv6 address
 testhostipv6 = socket.getaddrinfo(testhost, 443, family=socket.AF_INET6, proto=socket.IPPROTO_TCP)[0][4][0] # First ipv6 address of testhost
 r = requests.get(f"http://[{testhostipv6}]{testbaseURL}?ipv6test", headers={'host': testhost}) # http, not https
-print(r.content.decode('utf-8'))
+print("Public IPv6:", r.content.decode('utf-8'))
 
