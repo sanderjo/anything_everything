@@ -1,7 +1,10 @@
 import sys
 import telnetlib
 
-HOST = sys.argv[1]
+try:
+    HOST = sys.argv[1]
+except:
+    HOST = "94.232.116.140"
 
 '''
 $ telnet 94.232.116.140 nntp
@@ -14,24 +17,20 @@ quit
 Connection closed by foreign host.
 '''
 
+def get_nntp_welcome(HOST):
 
-tn = telnetlib.Telnet(HOST, 119, 3)
+    try:
+        tn = telnetlib.Telnet(HOST, 119, 1)
+        welcome_msg = tn.read_until(b"\n").decode()[4:].strip()
+        #print(welcome_msg)
+        tn.write(b"quit\n")
+        return welcome_msg
+    except:
+        return None
 
-'''
-tn.read_until(b"200")
-tn.read_until()
-
-if password:
-    tn.read_until(b"Password: ")
-    tn.write(password.encode('ascii') + b"\n")
-
-tn.write(b"ls\n")
-tn.write(b"quit\n")
-'''
-
-#print(tn.read_all())
-
-print(tn.read_until(b"\n"))
-#print(tn.read_all().decode('ascii'))
-
-tn.write(b"quit\n")
+subnet = "94.232.116."
+for i in range(111,255):
+    ip = subnet + str(i)
+    response = get_nntp_welcome(ip)
+    if response:
+        print(ip, response)
