@@ -1,10 +1,15 @@
+#!/usr/bin/env python3
+
+'''
+Finds all newsservers on Abavia IP range
+Prints IP address, hostname, Welcome message
+
+'''
+
 import sys
 import telnetlib
+import socket
 
-try:
-    HOST = sys.argv[1]
-except:
-    HOST = "94.232.116.140"
 
 '''
 $ telnet 94.232.116.140 nntp
@@ -28,9 +33,13 @@ def get_nntp_welcome(HOST):
     except:
         return None
 
-subnet = "94.232.116."
-for i in range(111,255):
+subnet = "94.232.116." # avavia ip range
+for i in range(1,255):
     ip = subnet + str(i)
     response = get_nntp_welcome(ip)
     if response:
-        print(ip, response)
+        try:
+            hostname = socket.gethostbyaddr(ip)[0]
+        except:
+            hostname = "unknown"
+        print(ip, hostname, ":", response)

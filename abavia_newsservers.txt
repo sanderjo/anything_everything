@@ -1,0 +1,60 @@
+94.232.116.114 news.xennanews.com : Welcome to xennanews
+94.232.116.115 news.usenet-server.de : Welcome to Reeseweb
+94.232.116.121 unknown : Welcome to NewsXS dev
+94.232.116.122 news.newsxs.nl : Welcome to Newsxs
+94.232.116.123 news.aeton.nl : Welcome to Aeton
+94.232.116.126 news.gebruikhet.net : Welcome to Bullcat
+94.232.116.128 reader.easyusenet.nl : Welcome to Easyusenet
+94.232.116.130 reader-intern.xsnews.nl : Welcome to XS News B.V.
+94.232.116.131 reader.xsnews.nl : Welcome to XS News
+94.232.116.132 reader.i-telligent.com : Welcome to I-Telligent
+94.232.116.133 aviteo-ams-v2.xennanews.com : Welcome to Aviteo Ltd DE
+94.232.116.134 aviteo-ams-flatrate-v2.xennanews.com : Welcome to Aviteo Ltd DE
+94.232.116.135 unknown : Welcome to Its Hosted
+94.232.116.138 news.smsusenet.nl : Welcome to SMS Usenet
+94.232.116.139 power.freediscussions.com : FreeDiscussions S.r.l
+94.232.116.140 usenetnl-ams-v2.xennanews.com : Usenet.nl S.r.l.
+94.232.116.141 eco.freediscussions.com : FreeDiscussions S.r.l
+94.232.116.142 usenetnl-ams-flatrate-v2.xennanews.com : Usenet.nl S.r.l.
+94.232.116.143 power.usenet.nl : Usenet.nl S.r.l.
+94.232.116.144 eco.usenet.nl : Usenet.nl S.r.l.
+94.232.116.145 news.dreamload.de : Welcome to Dreamload
+94.232.116.146 usenetexpress.hostredirects.com : Welcome to Express Network Group LLC
+94.232.116.147 giganews.hostredirects.com : Welcome to giganews
+94.232.116.148 aviteo-de-v2.xennanews.com : Welcome to Aviteo Ltd DE
+94.232.116.149 news.usenext.com : Welcome to Aviteo Ltd DE
+94.232.116.151 high.usenext.de : Welcome to Aviteo Ltd DE
+94.232.116.152 flat.usenext.de : Welcome to Aviteo Ltd DE
+94.232.116.153 usenetnl-fra-v2.xennanews.com : Usenet.nl S.r.l.
+94.232.116.154 news.bulknews.eu : Welcome to Bulknews
+94.232.116.155 reader.usenetdiscounter.com : Welcome to Usenetdiscounter
+94.232.116.156 news.easy-usenet.com : Welcome to Easy-Usenet
+94.232.116.157 news.usenetdiscount.com : Welcome to UsenetDiscount
+94.232.116.158 news2.eu.disputo.net : Welcome to Disputo
+94.232.116.159 xsnews.usenetblox.com : Welcome to UsenetBlox.com
+94.232.116.160 news.latinusenet.com : Welcome to latinusenet
+94.232.116.161 usenetserver.hostredirects.com : Welcome to Usenet-Server
+94.232.116.162 reader.i-telligent.net : Welcome to I-Telligent
+94.232.116.163 news.u2day.nl : Welcome: ut
+94.232.116.164 news.plinq.nl : Welcome to PLINQ
+94.232.116.165 reader.holmez.com : Welcome to holmez.com
+94.232.116.166 news.usenet.today : Welcome: ut
+94.232.116.167 reader.usenet.agency : Welcome to Usenet Agency
+94.232.116.168 news.stingyusenet.com : Welcome to Stingy Usenet
+94.232.116.169 news.usenet.org : Welcome to the world of Usenet.org
+94.232.116.170 reader.usenight.com : Welcome to Usenight
+94.232.116.171 news.kpn.nl : Access Denied
+94.232.116.172 news.xs4all.nl : Access Denied
+94.232.116.173 news.tecbit.eu : Welcome to TecBIT
+94.232.116.174 news.hitnews.com : Welcome to Hitnews
+94.232.116.175 bonus.usenetprime.com : Welcome to Usenetprime
+94.232.116.176 news.ls.nl : Welcome to Hitnews Test Environment
+94.232.116.177 news.usenetdeal.com : Welcome to usenetdeal
+94.232.116.178 reader.hospit.io : Welcome to hospit.io
+94.232.116.179 news.z51.biz : Welcome to z51
+94.232.116.180 reader.xsusenet.com : Welcome to XS Usenet
+94.232.116.181 reader.turbousenet.com : Welcome to TurboUsenet
+94.232.116.182 news.newsgrabber.nl : Welcome to Newsgrabber
+94.232.116.183 news.usenet2go.com : Welcome to Usenet2Go
+94.232.116.184 news.caiway.nl : Welcome to caiway.nl
+94.232.116.185 news.speedplaza.net : Welcome to Speedplaza
