@@ -21,9 +21,24 @@ echo "address" $address
 
 ip addr show | grep $address > /dev/null  && echo "$address already there on interface" && exit
 
+echo "Good: $address not in use on this host"
+# not on interface of this host, but check if in use elsewhere on the LAN
+
+host=$1
+
+# Ping the host
+ping -c 2 $address > /dev/null
+
+# Check the return status of the ping command
+if [ $? -eq 0 ]; then
+    echo "$address already in use. Exiting"
+    exit
+else
+    echo "Good: $address not yet in use on LAN"
+fi
 
 if [ "$EUID" -ne 0 ]
-  then echo "Please run as root"
+  then echo "Please run as root to set address. Exiting"
   exit
 fi
 
