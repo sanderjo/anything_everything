@@ -3,6 +3,16 @@
 # ... by finding the IPv6 subnet that's in use on the interface
 
 date
+
+# Check if at least one argument is provided
+if [ $# -lt 1 ]; then
+    addressending="1111"
+    echo "No parameter as address ending given, so using $addressending"
+else
+    # use first parameter
+    addressending=$1
+fi
+
 # get ipv6 default interface, via ip route
 interface=`ip -6 route show | grep default | head -1 | awk '{ print $5 }'`
 echo "default interface" $interface
@@ -15,8 +25,8 @@ echo "subnet" $subnet
 
 
 # anothervariable="$variablename"Bash_Is"$myvariable"
-ending="1111" # so the ipv6 address will be ...::1111
-address="$subnet$ending"
+#addressending="1111" # so the ipv6 address will be ...::1111
+address="$subnet$addressending"
 echo "address" $address
 
 ip addr show | grep $address > /dev/null  && echo "$address already there on interface" && exit
