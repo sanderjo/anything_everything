@@ -1,0 +1,300 @@
+reader.5eurousenet.com 563 Received: 200 Welcome to the reader
+news.aeton.nl 563 Received: 200 Welcome to Aeton
+news.anarqy.com 563 Error: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1006)
+eu6.astraweb.com 563 Received: 200 news.astraweb.com NNRP Service Ready (posting ok) (yEnc enabled).
+eu.astraweb.com 563 Received: 200 news.astraweb.com NNRP Service Ready (posting ok) (yEnc enabled).
+news6.astraweb.com 563 Received: 200 news.astraweb.com NNRP Service Ready (posting ok)  (yEnc enabled).
+news.astraweb.com 563 Received: 200 news.astraweb.com NNRP Service Ready (posting ok)  (yEnc enabled).
+ssl.astraweb.com 563 Received: 200 news.astraweb.com NNRP Service Ready (posting ok)  (yEnc enabled).
+ssl-eu.astraweb.com 563 Received: 200 news.astraweb.com NNRP Service Ready (posting ok) (yEnc enabled).
+ssl-us.astraweb.com 563 Received: 200 news.astraweb.com NNRP Service Ready (posting ok)  (yEnc enabled).
+us6.astraweb.com 563 Received: 200 news.astraweb.com NNRP Service Ready (posting ok)  (yEnc enabled).
+us.astraweb.com 563 Received: 200 news.astraweb.com NNRP Service Ready (posting ok)  (yEnc enabled).
+eu.bintube.com 563 Received: 200 news.bintube.com NNRP Service Ready (posting ok) (yEnc enabled).
+us.bintube.com 563 Received: 200 news.bintube.com NNRP Service Ready (posting ok) (yEnc enabled).
+eunews2.blocknews.net 563 Received: 200 Welcome to Usenet
+eunews2-v6.blocknews.net 563 Received: 200 Welcome to Usenet
+eunews.blocknews.net 563 Received: 200 Welcome to Usenet
+eunews-v6.blocknews.net 563 Received: 200 Welcome to Usenet
+usnews.blocknews.net 563 Received: 200 Welcome to Usenet
+usnews-v6.blocknews.net 563 Received: 200 Welcome to Usenet
+news.bulknews.eu 563 Received: 200 Welcome to Bulknews
+news.caiway.nl 563 Received: 200 Welcome to caiway.nl
+block.cheapnews.eu 563 Received: 200 Welcome to Cheapnews
+news.cheapnews.eu 563 Received: 200 Welcome to Cheapnews
+reader.xsnews.co.uk 563 Received: 200 Welcome to XS News
+news4.dwld.link 563 Received: 201 NNTP srv1
+news6.dwld.link 563 Received: 201 NNTP srv1
+news.dwld.link 563 Received: 201 NNTP srv1
+beta-eu.news.easynews.com 563 Received: 200 news.easynews.com Welcome!
+beta-us.news.easynews.com 563 Received: 200 news.easynews.com Welcome!
+news4.easynews.com 563 Received: 200 news.easynews.com Welcome!
+news6.easynews.com 563 Received: 200 news.easynews.com Welcome!
+news6.eu.easynews.com 563 Received: 200 news.easynews.com Welcome!
+news6.us.easynews.com 563 Received: 200 news.easynews.com Welcome!
+news.easynews.com 563 Received: 200 news.easynews.com Welcome!
+news.eu.easynews.com 563 Received: 200 news.easynews.com Welcome!
+news.us.easynews.com 563 Received: 200 news.easynews.com Welcome!
+proxy.news.easynews.com 563 Received: 200 news.easynews.com Welcome!
+secure6.news.easynews.com 563 Received: 200 news.easynews.com Welcome!
+secure6.news.eu.easynews.com 563 Received: 200 news.easynews.com Welcome!
+secure6.news.us.easynews.com 563 Received: 200 news.easynews.com Welcome!
+secure-beta-eu.news.easynews.com 563 Received: 200 news.easynews.com Welcome!
+secure-beta-us.news.easynews.com 563 Received: 200 news.easynews.com Welcome!
+secure-eu.news.easynews.com 563 Received: 200 news.easynews.com Welcome!
+secure.news.easynews.com 563 Received: 200 news.easynews.com Welcome!
+secure.news.eu.easynews.com 563 Received: 200 news.easynews.com Welcome!
+secure-us.news.easynews.com 563 Received: 200 news.easynews.com Welcome!
+test-eu-ipv4.news.easynews.com 563 Received: 200 news.easynews.com Welcome!
+test-eu-ipv6.news.easynews.com 563 Received: 200 news.easynews.com Welcome!
+test-eu.news.easynews.com 563 Received: 200 news.easynews.com Welcome!
+test-secure-eu-ipv4.news.easynews.com 563 Received: 200 news.easynews.com Welcome!
+test-secure-eu-ipv6.news.easynews.com 563 Received: 200 news.easynews.com Welcome!
+test-secure-eu.news.easynews.com 563 Received: 200 news.easynews.com Welcome!
+test-secure-us-ipv4.news.easynews.com 563 Received: 200 news.easynews.com Welcome!
+test-secure-us-ipv6.news.easynews.com 563 Received: 200 news.easynews.com Welcome!
+test-secure-us.news.easynews.com 563 Received: 200 news.easynews.com Welcome!
+test-us-ipv4.news.easynews.com 563 Received: 200 news.easynews.com Welcome!
+test-us-ipv6.news.easynews.com 563 Received: 200 news.easynews.com Welcome!
+test-us.news.easynews.com 563 Received: 200 news.easynews.com Welcome!
+news.easyusenet.nl 563 Received: 200 Welcome to Easyusenet
+reader.easyusenet.nl 563 Received: 200 Welcome to Easyusenet
+news.eternal-september.org 563 Received: 200 news.eternal-september.org InterNetNews NNRP server INN 2.8.0 (20240109 snapshot) ready (posting ok)
+reader443.eternal-september.org 563 Received: 200 news.eternal-september.org InterNetNews NNRP server INN 2.8.0 (20240109 snapshot) ready (posting ok)
+news6.eweka.nl 563 Received: 200 Welcome to Eweka
+news.eweka.nl 563 Received: 200 Welcome to Eweka
+news-fr7.eweka.nl 563 Received: 200 Welcome to Eweka
+newsreader1.eweka.nl 563 Received: 200 Welcome to Eweka
+newsreader6.eweka.nl 563 Received: 200 Welcome to Eweka
+newsreader.eweka.nl 563 Received: 200 Welcome to Eweka
+post6.eweka.nl 563 Received: 200 Welcome to Eweka
+post.eweka.nl 563 Received: 200 Welcome to Eweka
+sslreader.eweka.nl 563 Received: 200 Welcome to Eweka
+textnews.eweka.nl 563 Received: 200 Welcome to Eweka
+upload.eweka.nl 563 Received: 200 Welcome to Eweka
+news.extremeusenet.nl 563 Received: 200 Welcome to ExtremeUsenet
+reader.extremeusenet.nl 563 Received: 200 Welcome to ExtremeUsenet
+euro.fastusenet.org 563 Received: 200 Welcome to Usenet
+news.fastusenet.org 563 Received: 200 Welcome to Usenet
+secure.fastusenet.org 563 Received: 200 Welcome to Usenet
+news20.forteinc.com 563 Received: 200 Welcome to Forte Premium.  Please Authenticate.
+news.forteinc.com 563 Received: 200 Welcome to Forte Premium.  Please Authenticate.
+eco.freediscussions.com 563 Received: 200 FreeDiscussions S.r.l
+power.freediscussions.com 563 Received: 200 FreeDiscussions S.r.l
+bonus.frugalusenet.com 563 Received: 200 Welcome at bonus.frugalusenet.com (fe4)
+eunews2.frugalusenet.com 563 Received: 200 Welcome to Usenet
+eunews2-v6.frugalusenet.com 563 Received: 200 Welcome to Usenet
+eunews.frugalusenet.com 563 Received: 200 Welcome to Usenet
+eunews-v6.frugalusenet.com 563 Received: 200 Welcome to Usenet
+europe.frugalusenet.com 563 Received: 200 Welcome to Usenet
+news.frugalusenet.com 563 Received: 200 Welcome to Usenet
+news-v6.frugalusenet.com 563 Received: 200 Welcome to Usenet
+news.gebruikhet.net 563 Received: 200 Welcome to Bullcat
+news-europe.giganews.com 563 Error: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1006)
+news.giganews.com 563 Error: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1006)
+reader.high-way.me 563 Received: 201 NNTP srv1
+news.hitnews.com 563 Received: 200 Welcome to Hitnews
+ssl.hitnews.com 563 Received: 200 Welcome to Hitnews
+reader.i-telligent.com 563 Received: 200 Welcome to I-Telligent
+reader.i-telligent.net 563 Received: 200 Welcome to I-Telligent
+news.kpn.nl 563 Received: 500 Access Denied
+news.latinusenet.com 563 Received: 200 Welcome to latinusenet
+news.ls.nl 563 Received: 200 Welcome to Hitnews Test Environment
+europe.maximumusenet.com 563 Received: 200 Welcome (p03.eu1)
+europe-ssl.maximumusenet.com 563 Received: 200 Welcome (p04.eu1)
+news.maximumusenet.com 563 Received: 200 Welcome (p01.dc1)
+useast.maximumusenet.com 563 Received: 200 Welcome (p08.dc1)
+us-secure.maximumusenet.com 563 Received: 200 Welcome (p06.dc1)
+eu.newsdemon.com 563 Received: 200 Welcome (n02.eu1)
+europe.newsdemon.com 563 Received: 200 Welcome (n21.iad1)
+europe-ssl.newsdemon.com 563 Received: 200 Welcome (n21.iad1)
+news.newsdemon.com 563 Received: 200 Welcome (n21.iad1)
+nl.newsdemon.com 563 Received: 200 Welcome (n21.iad1)
+useast.newsdemon.com 563 Received: 200 Welcome (n21.iad1)
+us.newsdemon.com 563 Received: 200 Welcome (n21.iad1)
+us-secure.newsdemon.com 563 Received: 200 Welcome (n21.iad1)
+uswest.newsdemon.com 563 Received: 200 Welcome (n03.fmt2)
+news.newsgrabber.nl 563 Received: 200 Welcome to Newsgrabber
+news-de.newsgroup.ninja 563 Received: 200 Welcome
+news.newsgroup.ninja 563 Received: 200 Welcome
+news-nl.newsgroup.ninja 563 Received: 200 Welcome
+news-us.newsgroup.ninja 563 Received: 200 Welcome
+secure.newsgroup-binaries.com 563 Received: 200 Welcome
+de.newsgroupdirect.com 563 Received: 200 Welcome (p01.dc1)
+europe.newsgroupdirect.com 563 Received: 200 Welcome (p01.eu1)
+eu-tst.newsgroupdirect.com 563 Received: 200 Welcome (p04.eu1)
+farm.newsgroupdirect.com 563 Received: 200 Welcome at farm.NewsgroupDirect.com (fe2)
+news-eu.newsgroupdirect.com 563 Received: 200 Welcome (p24.dc1)
+news-eu-ssl.newsgroupdirect.com 563 Received: 200 Welcome (p23.dc1)
+news.newsgroupdirect.com 563 Received: 200 Welcome (p21.dc1)
+news-ssl.newsgroupdirect.com 563 Received: 200 Welcome (p07.dc1)
+nl.newsgroupdirect.com 563 Received: 200 Welcome (p03.eu1)
+super.newsgroupdirect.com 563 Received: 200 News.GigaNews.Com
+us.newsgroupdirect.com 563 Received: 200 Welcome (p25.dc1)
+news2.newshosting.com 563 Received: 200 NNRP unlimited.newshosting.com Service Ready - support@newshosting.com
+news6.ams.newshosting.com 563 Received: 200 NNRP unlimited.newshosting.com Service Ready - support@newshosting.com
+news6.fr7.newshosting.com 563 Received: 200 NNRP unlimited.newshosting.com Service Ready - support@newshosting.com
+news6.iad.newshosting.com 563 Received: 200 NNTP unlimited.newshosting.com Service Ready - support@newshosting.com
+news6.newshosting.com 563 Received: 200 NNRP unlimited.newshosting.com Service Ready - support@newshosting.com
+news.ams.newshosting.com 563 Received: 200 NNRP unlimited.newshosting.com Service Ready - support@newshosting.com
+news-de6.newshosting.com 563 Received: 200 NNRP unlimited.newshosting.com Service Ready - support@newshosting.com
+news-de.newshosting.com 563 Received: 200 NNRP unlimited.newshosting.com Service Ready - support@newshosting.com
+news-eu6.newshosting.com 563 Received: 200 NNRP unlimited.newshosting.com Service Ready - support@newshosting.com
+news-eu.newshosting.com 563 Received: 200 NNRP unlimited.newshosting.com Service Ready - support@newshosting.com
+news.fr7.newshosting.com 563 Received: 200 NNRP unlimited.newshosting.com Service Ready - support@newshosting.com
+news.iad.newshosting.com 563 Received: 200 NNTP unlimited.newshosting.com Service Ready - support@newshosting.com
+news.newshosting.com 563 Received: 200 NNRP unlimited.newshosting.com Service Ready - support@newshosting.com
+news-nl6.newshosting.com 563 Received: 200 NNRP unlimited.newshosting.com Service Ready - support@newshosting.com
+news-nl.newshosting.com 563 Received: 200 NNRP unlimited.newshosting.com Service Ready - support@newshosting.com
+news-us6.newshosting.com 563 Received: 200 NNTP unlimited.newshosting.com Service Ready - support@newshosting.com
+news-us.newshosting.com 563 Received: 200 NNTP unlimited.newshosting.com Service Ready - support@newshosting.com
+nhxl.newshosting.com 563 Received: 200 NNRP unlimited.newshosting.com Service Ready - support@newshosting.com
+unlimited.newshosting.com 563 Received: 200 NNRP unlimited.newshosting.com Service Ready - support@newshosting.com
+eu.newsleecher.com 563 Received: 200 Welcome
+news.newsleecher.com 563 Received: 200 Welcome
+us.newsleecher.com 563 Received: 200 Welcome
+news.newsxs.nl 563 Received: 200 Welcome to Newsxs
+reader2.newsxs.nl 563 Received: 200 Welcome to Newsxs
+reader6.newsxs.nl 563 Received: 200 Welcome to Newsxs
+reader.newsxs.nl 563 Received: 200 Welcome to Newsxs
+usenet.premium.to 563 Received: 201 NNTP Service Ready
+news.premium-news.de 563 Received: 200 Welcome
+usenet.premiumize.me 563 Received: 201 usenet.premiumize.me NNRP Service Ready - support@premiumize.me (no posting)
+news.ssl.nl.prepaid-usenet.de 563 Received: 200 Welcome
+news.ssl.usa.prepaid-usenet.de 563 Received: 200 Welcome
+news6.pureusenet.nl 563 Received: 200 news.pureusenet.nl NNRP Service Ready - support@pureusenet.nl
+news.pureusenet.nl 563 Received: 200 news.pureusenet.nl NNRP Service Ready - support@pureusenet.nl
+news.shemes.com 563 Received: 200 Welcome
+reader.simply-premium.com 563 Received: 201 NNTP srv1
+news.smsusenet.nl 563 Received: 200 Welcome to SMS Usenet
+news2.snelnl.com 563 Received: 200 Welcome
+news3.snelnl.com 563 Received: 200 Welcome
+news.snelnl.com 563 Received: 200 Welcome
+reader.snelnl.com 563 Received: 200 Welcome
+ssl-news2.snelnl.com 563 Received: 200 Welcome
+ssl-news.snelnl.com 563 Received: 200 Welcome
+news.solani.org 563 Received: 200 reader6.news.weretis.net InterNetNews NNRP server INN 2.7.1 ready (no posting)
+news.sonic-news.com 563 Error: [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1006)
+123.sslusenet.com 563 Received: 200 newsreader.usenetter.nl NNRP Service Ready - info@usenetter.nl (no posting)(no reading)
+ams2.sslusenet.com 563 Received: 200 Welcome
+de.sslusenet.com 563 Received: 200 Welcome
+iad.sslusenet.com 563 Received: 200 Welcome
+news.sslusenet.com 563 Received: 200 Welcome
+nl.sslusenet.com 563 Received: 200 Welcome
+pro.sslusenet.com 563 Received: 200 newsreader.usenetter.nl NNRP Service Ready - info@usenetter.nl (no posting)(no reading)
+tele2.sslusenet.com 563 Received: 200 tele2news.tweaknews.nl NNRP Service Ready - klantenservice@tele2.com (posting ok)
+us.sslusenet.com 563 Received: 200 Welcome
+news.stingyusenet.com 563 Received: 200 Welcome to Stingy Usenet
+news6.sunnyusenet.com 563 Received: 200 news.sunnyusenet.com NNRP Service Ready - support@sunnyusenet.com
+news.sunnyusenet.com 563 Received: 200 news.sunnyusenet.com NNRP Service Ready - support@sunnyusenet.com
+news.supernews.com 563 Received: 200 Supernews server ready
+news.thecubenet.com 563 Received: 200 Welcome (cn10.iad1)
+secure.europe.thecubenet.com 563 Received: 200 Welcome (cn02.eu1)
+secure.news.thecubenet.com 563 Received: 200 Welcome (cn10.iad1)
+eu.thundernews.com 563 Received: 200 Welcome (tn03.eu1)
+news.thundernews.com 563 Received: 200 Welcome (tn21.iad1)
+nl.thundernews.com 563 Received: 200 Welcome (tn02.eu1)
+secure.eu.thundernews.com 563 Received: 200 Welcome (tn03.eu1)
+secure.nl.thundernews.com 563 Received: 200 Welcome (tn02.eu1)
+secure.us.thundernews.com 563 Received: 200 Welcome (tn17.iad1)
+us.thundernews.com 563 Received: 200 Welcome (tn07.iad1)
+reader.turbousenet.com 563 Received: 200 Welcome to TurboUsenet
+news6.tweaknews.eu 563 Received: 200 news.tweak-news.eu NNRP Service Ready - newsmaster@tweak-news.eu (posting ok)
+news6.tweaknews.nl 563 Received: 200 news.tweaknews.nl NNRP Service Ready - info@tweaknews.nl (posting ok)
+news.tweaknews.eu 563 Received: 200 news.tweak-news.eu NNRP Service Ready - newsmaster@tweak-news.eu (posting ok)
+news.tweaknews.nl 563 Received: 200 news.tweaknews.nl NNRP Service Ready - info@tweaknews.nl (posting ok)
+news.u2day.nl 563 Received: 200 Welcome: ut
+eco.usenet.nl 563 Received: 200 Usenet.nl S.r.l.
+news1.usenet.nl 563 Received: 200 Welcome to usenet.nl
+news4.usenet.farm 563 Received: 200 Welcome at Usenet.Farm (fe3)
+news6.usenet.farm 563 Received: 200 Welcome at Usenet.Farm (fe3)
+news.usenet.farm 563 Received: 200 Welcome at Usenet.Farm (fe2)
+news.usenet.org 563 Received: 200 Welcome to the world of Usenet.org
+news.usenet.today 563 Received: 200 Welcome: ut
+power2.usenet.nl 563 Received: 200 Welcome
+power.usenet.nl 563 Received: 200 Usenet.nl S.r.l.
+reader.usenet.agency 563 Received: 200 Welcome to Usenet Agency
+europessl.usenet-access.com 563 Received: 200 Welcome
+ssl.usenet-access.com 563 Received: 200 Welcome
+news.usenet-server.de 563 Received: 200 Welcome to Reeseweb
+news4.usenet4u.nl 563 Received: 200 Welcome
+news.usenetbucket.com 563 Received: 200 Welcome to Usenetbucket
+reader.usenetbucket.com 563 Received: 200 Welcome to Usenetbucket
+reader.usenetdiscounter.com 563 Received: 200 Welcome to Usenetdiscounter
+news-eu.usenetexpress.com 563 Received: 200 Welcome to UsenetExpress (fe04)
+news.usenetexpress.com 563 Received: 200 Welcome to UsenetExpress (fe22)
+news.usenetfarm.eu 563 Received: 200 Welcome at Usenet.Farm (fe3)
+blue.usenetnews.net 563 Received: 200 Welcome at Usenet News (fe1)
+gold.usenetnews.net 563 Received: 200 gold.usenetnews.net NNRP Service Ready - support@usenetnews.net
+green.usenetnews.net 563 Received: 200 Welcome to Usenetnews
+eunews2.usenetnow.net 563 Received: 200 Welcome to Usenet
+eunews2-v6.usenetnow.net 563 Received: 200 Welcome to Usenet
+eunews.usenetnow.net 563 Received: 200 Welcome to Usenet
+eunews-v6.usenetnow.net 563 Received: 200 Welcome to Usenet
+news.usenetnow.net 563 Received: 200 Welcome at Frugal Usenet (fe2)
+usnews.usenetnow.net 563 Received: 200 Welcome to Usenet
+usnews-v6.usenetnow.net 563 Received: 200 Welcome to Usenet
+eu.usenetprime.com 563 Received: 200 Welcome to UsenetPrime
+news.usenetprime.com 563 Received: 200 Welcome to UsenetPrime
+beta.usenetserver.com 563 Received: 200 news.usenetserver.com Welcome!
+chicago.usenetserver.com 563 Received: 200 news.usenetserver.com Welcome!
+east.usenetserver.com 563 Received: 200 news.usenetserver.com Welcome!
+hsplus.usenetserver.com 563 Received: 200 news.usenetserver.com Welcome!
+hspsecure.usenetserver.com 563 Received: 200 news.usenetserver.com Welcome!
+my.usenetserver.com 563 Received: 200 news.usenetserver.com Welcome!
+news6.ams.usenetserver.com 563 Received: 200 news.usenetserver.com Welcome!
+news6.eu.usenetserver.com 563 Received: 200 news.usenetserver.com Welcome!
+news6.fr7.usenetserver.com 563 Received: 200 news.usenetserver.com Welcome!
+news6.iad.usenetserver.com 563 Received: 200 news.usenetserver.com Welcome!
+news6.usenetserver.com 563 Received: 200 news.usenetserver.com Welcome!
+news.ams.usenetserver.com 563 Received: 200 news.usenetserver.com Welcome!
+news-eu6.usenetserver.com 563 Received: 200 news.usenetserver.com Welcome!
+news-eu.usenetserver.com 563 Received: 200 news.usenetserver.com Welcome!
+news.eu.usenetserver.com 563 Received: 200 news.usenetserver.com Welcome!
+news.fr7.usenetserver.com 563 Received: 200 news.usenetserver.com Welcome!
+news.iad.usenetserver.com 563 Received: 200 news.usenetserver.com Welcome!
+news-us6.usenetserver.com 563 Received: 200 news.usenetserver.com Welcome!
+news.usenetserver.com 563 Received: 200 news.usenetserver.com Welcome!
+news-us.usenetserver.com 563 Received: 200 news.usenetserver.com Welcome!
+nntp10.usenetserver.com 563 Received: 200 news.usenetserver.com Welcome!
+nntp1.usenetserver.com 563 Received: 200 news.usenetserver.com Welcome!
+nntp2.usenetserver.com 563 Received: 200 news.usenetserver.com Welcome!
+nntp3.usenetserver.com 563 Received: 200 news.usenetserver.com Welcome!
+nntp4.usenetserver.com 563 Received: 200 news.usenetserver.com Welcome!
+nntp6.usenetserver.com 563 Received: 200 news.usenetserver.com Welcome!
+nntp7.usenetserver.com 563 Received: 200 news.usenetserver.com Welcome!
+nntp8.usenetserver.com 563 Received: 200 news.usenetserver.com Welcome!
+nntp9.usenetserver.com 563 Received: 200 news.usenetserver.com Welcome!
+nntp.usenetserver.com 563 Received: 200 news.usenetserver.com Welcome!
+securebeta.usenetserver.com 563 Received: 200 news.usenetserver.com Welcome!
+secure.usenetserver.com 563 Received: 200 news.usenetserver.com Welcome!
+test.usenetserver.com 563 Received: 200 news.usenetserver.com Welcome!
+west.usenetserver.com 563 Received: 200 news.usenetserver.com Welcome!
+flat.usenext.de 563 Received: 200 Welcome to Aviteo Ltd DE
+high2.usenext.de 563 Received: 200 Welcome to UseNeXT
+high.usenext.de 563 Received: 200 Welcome to Aviteo Ltd DE
+news.usenext.com 563 Received: 200 Welcome to Aviteo Ltd DE
+news.usenext.de 563 Received: 200 Welcome to Aviteo Ltd DE
+reader.usenight.com 563 Received: 200 Welcome to Usenight
+news.vipernews.com 563 Received: 200 news.vipernews.com NNRP Service Ready - support@vipernews.com
+aviteo-ams-flatrate-v2.xennanews.com 563 Received: 200 Welcome to Aviteo Ltd DE
+aviteo-ams-v2.xennanews.com 563 Received: 200 Welcome to Aviteo Ltd DE
+news.xennanews.com 563 Received: 200 Welcome to xennanews
+usenetnl-ams-flatrate-v2.xennanews.com 563 Received: 200 Usenet.nl S.r.l.
+usenetnl-ams-v2.xennanews.com 563 Received: 200 Usenet.nl S.r.l.
+news6.xlned.com 563 Received: 200 news.xlned.com NNRP Service Ready - support@xlned.com
+news.xlned.com 563 Received: 200 news.xlned.com NNRP Service Ready - support@xlned.com
+reader6.xlned.com 563 Received: 200 news.xlned.com NNRP Service Ready - support@xlned.com
+news.xs4all.nl 563 Received: 500 Access Denied
+newszilla.xs4all.nl 563 Received: 500 Access Denied
+news.xsnews.nl 563 Received: 200 Welcome to XS News
+reader-intern.xsnews.nl 563 Received: 200 Welcome to XS News B.V.
+reader.xsnews.com 563 Received: 200 Welcome to XS News
+reader.xsnews.de 563 Received: 200 Welcome to XS News
+reader.xsnews.es 563 Received: 200 Welcome to XS News
+reader.xsnews.fr 563 Received: 200 Welcome to XS News
+reader.xsnews.it 563 Received: 200 Welcome to XS News
+reader.xsnews.nl 563 Received: 200 Welcome to XS News
+reader.xsnews.pt 563 Received: 200 Welcome to XS News
+test.xsnews.com 563 Received: 200 Please register at test.xsnews.com
+reader.xsusenet.com 563 Received: 200 Welcome to XS Usenet
