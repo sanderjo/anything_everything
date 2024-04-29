@@ -2,8 +2,25 @@
 
 '''
 SABnzbd pre-queue (aka pre-processing script)
-Checks if there is a download with Normal priority, and already downloading.
-If so, sets it to High priority, so that it will keep downloading
+Checks if there is a download with Normal priority & already downloading.
+If so, sets it to High priority, so that it will keep downloading (=goal), no matter the automatic sorting
+
+
+Usage:
+Create a script directory
+Put this script in that directory. Make it executable. Edit the two lines
+As a test, run it directly from that directory
+
+In SABnzbd:
+Define script directory in http://127.0.0.1:8080/sabnzbd/config/folders/#script_dir
+Define pre-queue script: http://127.0.0.1:8080/sabnzbd/config/switches/#pre_script
+
+Done!
+
+
+Note
+http://127.0.0.1:8080/sabnzbd/config/switches/#auto_sort ... you can set sorting to anything you want
+
 '''
 
 # edit these two lines
