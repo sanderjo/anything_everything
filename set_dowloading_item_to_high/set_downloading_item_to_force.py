@@ -2,6 +2,9 @@
 
 '''
 SABnzbd pre-queue (aka pre-processing script)
+
+Short: a download queue items keeps downloading, no matter sorting (of Normal prio items)
+
 Checks if there is a download with Normal priority & already downloading.
 If so, sets it to High priority, so that it will keep downloading (=goal), no matter the automatic sorting
 
