@@ -52,7 +52,7 @@ def talk_to_sabnzbd(sab_url):
         return None
 
 # MAIN
-debug = False
+debug = True
 
 if __name__ == "__main__":
     # get sab queue
@@ -77,6 +77,7 @@ if __name__ == "__main__":
                     if debug:
                         print(f"setting prio of {filename} to High")
                     api_url_prioset = f"{api_url_queue}&name=priority&value={nzo_id}&value2=1"
+                    talk_to_sabnzbd(api_url_prioset)
 
                 break # done; we found the Downloading item
     for i in range(7):
