@@ -11,6 +11,7 @@ baseurl = "http://localhost:8080/"
 apikey = "f69d7cdb668f4628b4238ff61af0acc8" # get from http://127.0.0.1:8080/sabnzbd/config/general/#apikey_display
 # do not edit below
 
+import sys
 import urllib.request
 import json
 
@@ -31,7 +32,7 @@ def talk_to_sabnzbd(sab_url):
         return None
 
 # MAIN
-debug = True
+debug = False
 
 if __name__ == "__main__":
     # get sab queue
@@ -60,3 +61,4 @@ if __name__ == "__main__":
                 break # done; we found the Downloading item
     for i in range(7):
         print()
+    sys.exit(0)
