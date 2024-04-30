@@ -1,5 +1,17 @@
 #!/usr/bin/env python3
 
+import os
+try:
+    baseurl = os.environ['SAB_API_URL']
+    apikey = os.environ['SAB_API_KEY']
+except:
+    # edit these two lines if on SABnzbd < 4.3.0 (or test run from CLI)
+    baseurl = "http://localhost:8080/"
+    apikey = "f69d7cdb668f4628b4238ff61af0acc8"  # get from http://127.0.0.1:8080/sabnzbd/config/general/#apikey_display
+
+
+
+
 '''
 SABnzbd pre-queue (aka pre-processing script)
 
@@ -24,10 +36,7 @@ http://127.0.0.1:8080/sabnzbd/config/switches/#auto_sort ... you can set sorting
 
 '''
 
-# edit these two lines
-baseurl = "http://localhost:8080/"
-apikey = "f69d7cdb668f4628b4238ff61af0acc8" # get from http://127.0.0.1:8080/sabnzbd/config/general/#apikey_display
-# do not edit below
+
 
 import sys
 import urllib.request
