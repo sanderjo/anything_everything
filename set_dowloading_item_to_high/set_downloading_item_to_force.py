@@ -35,13 +35,17 @@ import sys
 import urllib.request
 import json
 
+try:
+    debug = sys.argv[1] == "debug"
+except:
+    debug = False
 
 api_url_queue = f"{baseurl}/sabnzbd/api?output=json&apikey={apikey}&mode=queue"
 
 def talk_to_sabnzbd(sab_url):
     try:
         # Make the GET request
-        response = urllib.request.urlopen(api_url_queue)
+        response = urllib.request.urlopen(sab_url)
         # Read the response data
         data = response.read().decode('utf-8')
         # Parse JSON
@@ -52,7 +56,7 @@ def talk_to_sabnzbd(sab_url):
         return None
 
 # MAIN
-debug = True
+
 
 if __name__ == "__main__":
     # get sab queue
@@ -62,24 +66,29 @@ if __name__ == "__main__":
                 print(json.dumps(sabnzbd_queue, indent=4))
         all_queue_items = sabnzbd_queue['queue']['slots']
         for queueitem in all_queue_items:
-            if debug:
-                print(queueitem)
             if queueitem['status'] == 'Downloading':
                 filename = queueitem['filename']
                 nzo_id = queueitem['nzo_id']
                 percentage = float(queueitem['percentage'])
                 priority = queueitem['priority']
                 if debug:
-                    print(f"found {filename} as downloading")
+                    print(f"\n\n\nfound {filename} as downloading\n\n\n")
                 if priority == 'Normal' and percentage > 5.0:
                     # Set priority as described https://sabnzbd.org/wiki/configuration/4.2/api#priority
                     # api?mode=queue&name=priority&value=NZO_ID&value2=0 with 1 = High Priority
                     if debug:
                         print(f"setting prio of {filename} to High")
                     api_url_prioset = f"{api_url_queue}&name=priority&value={nzo_id}&value2=1"
-                    talk_to_sabnzbd(api_url_prioset)
+                    if debug:
+                        print("\napi_url_prioset",  api_url_prioset)
+                    result = talk_to_sabnzbd(api_url_prioset)
+                    if debug:
+                        print("\nresult of priosetting:", result)
 
                 break # done; we found the Downloading item
+
+
+    # empty stdout output as we don't want to
     for i in range(7):
         print()
     sys.exit(0)
