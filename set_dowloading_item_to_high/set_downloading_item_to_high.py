@@ -1,5 +1,19 @@
 #!/usr/bin/env python3
 
+import os
+try:
+    baseurl = os.environ['SAB_API_URL'] # 'http://localhost:8080/sabnzbd/api'
+    apikey = os.environ['SAB_API_KEY']
+except:
+    # edit these two lines if on SABnzbd < 4.3.0 (or test run from CLI)
+    apikey = "f69d7cdb668f4628b4238ff61af0acc8"  # get from http://127.0.0.1:8080/sabnzbd/config/general/#apikey_display
+    baseurl = "http://localhost:8080/"
+    baseurl = baseurl + "sabnzbd/api"  # do NOT edit
+
+api_url_queue = f"{baseurl}?output=json&apikey={apikey}&mode=queue" # default: GET queue
+
+
+
 '''
 SABnzbd pre-queue (aka pre-processing script)
 
@@ -20,14 +34,11 @@ Done!
 
 
 Note
-http://127.0.0.1:8080/sabnzbd/config/switches/#auto_sort ... you can set sorting to anything you want
+Via http://127.0.0.1:8080/sabnzbd/config/switches/#auto_sort ... you can set sorting to anything you want
 
 '''
 
-# edit these two lines
-baseurl = "http://localhost:8080/"
-apikey = "f69d7cdb668f4628b4238ff61af0acc8" # get from http://127.0.0.1:8080/sabnzbd/config/general/#apikey_display
-# do not edit below
+
 
 import sys
 import urllib.request
@@ -38,7 +49,6 @@ try:
 except:
     debug = False
 
-api_url_queue = f"{baseurl}/sabnzbd/api?output=json&apikey={apikey}&mode=queue" # default: *get* queue
 
 def talk_to_sabnzbd(sab_url):
     try:
@@ -68,7 +78,7 @@ if __name__ == "__main__":
                 percentage = float(queueitem['percentage'])
                 priority = queueitem['priority']
                 if debug:
-                    print(f"\nfound {filename} as downloading\n\n\n")
+                    print(f"\nfound {filename} as downloading, with priority {priority}\n\n\n")
                 if priority == 'Normal' and percentage > 5.0:
                     # Set priority as described on https://sabnzbd.org/wiki/configuration/4.2/api#priority
                     # api?mode=queue&name=priority&value=NZO_ID&value2=0 with 1 = High Priority
@@ -78,13 +88,21 @@ if __name__ == "__main__":
                     if debug:
                         print("\napi_url_prioset",  api_url_prioset)
                     result = talk_to_sabnzbd(api_url_prioset)
+                    result = talk_to_sabnzbd(api_url_prioset)
+                    result = talk_to_sabnzbd(api_url_prioset)
                     if debug:
                         print("\nresult of priosetting:", result)
 
                 break  # done; we found the Downloading item, and handled it
 
 
-    # empty stdout output as we don't want to push anything to SABnzbd (this is a pre-queue script after all)
-    for i in range(7):
-        print()
+    # Just accept this NZB
+    print("1")  # Accept the job
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
     sys.exit(0)
+
