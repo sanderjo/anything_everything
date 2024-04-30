@@ -3,8 +3,6 @@
 '''
 SABnzbd pre-queue (aka pre-processing script)
 
-Short: a download queue items keeps downloading, no matter sorting (of Normal prio items)
-
 Checks if there is a download with Normal priority & already downloading.
 If so, sets it to High priority, so that it will keep downloading (=goal), no matter the automatic sorting
 
@@ -40,7 +38,7 @@ try:
 except:
     debug = False
 
-api_url_queue = f"{baseurl}/sabnzbd/api?output=json&apikey={apikey}&mode=queue"
+api_url_queue = f"{baseurl}/sabnzbd/api?output=json&apikey={apikey}&mode=queue" # default: *get* queue
 
 def talk_to_sabnzbd(sab_url):
     try:
@@ -57,10 +55,10 @@ def talk_to_sabnzbd(sab_url):
 
 # MAIN
 
-
 if __name__ == "__main__":
     # get sab queue
     sabnzbd_queue = talk_to_sabnzbd(api_url_queue)
+    # parse the queue
     if sabnzbd_queue:
         all_queue_items = sabnzbd_queue['queue']['slots']
         for queueitem in all_queue_items:
@@ -72,7 +70,7 @@ if __name__ == "__main__":
                 if debug:
                     print(f"\nfound {filename} as downloading\n\n\n")
                 if priority == 'Normal' and percentage > 5.0:
-                    # Set priority as described https://sabnzbd.org/wiki/configuration/4.2/api#priority
+                    # Set priority as described on https://sabnzbd.org/wiki/configuration/4.2/api#priority
                     # api?mode=queue&name=priority&value=NZO_ID&value2=0 with 1 = High Priority
                     if debug:
                         print(f"setting prio of {filename} to High")
@@ -83,10 +81,10 @@ if __name__ == "__main__":
                     if debug:
                         print("\nresult of priosetting:", result)
 
-                break # done; we found the Downloading item
+                break  # done; we found the Downloading item, and handled it
 
 
-    # empty stdout output as we don't want to
+    # empty stdout output as we don't want to push anything to SABnzbd (this is a pre-queue script after all)
     for i in range(7):
         print()
     sys.exit(0)
