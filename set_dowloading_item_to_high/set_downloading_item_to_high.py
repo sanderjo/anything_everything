@@ -94,7 +94,7 @@ else:
             priority = queueitem['priority']
             loggingtext += [f"found {filename} as downloading, with priority {priority}"]
             if priority == 'Normal' and percentage > 5.0:
-                set_prio_high
+                set_prio_high(nzo_id)
             break  # done; we found the Downloading item, and handled it
 
 # Just accept this NZB, with these 7 output parameters
