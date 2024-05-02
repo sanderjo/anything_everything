@@ -59,6 +59,8 @@ def talk_to_sabnzbd(sab_url):
 def set_prio_high(nzo_id):
     # Set priority as described on https://sabnzbd.org/wiki/configuration/4.2/api#priority
     # api?mode=queue&name=priority&value=NZO_ID&value2=0 with 1 = High Priority
+
+    global loggingtext
     loggingtext += [f"setting prio of {filename} to High"]
 
     # create URL for setting prio of nzo_id to High
