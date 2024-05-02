@@ -60,21 +60,20 @@ def set_prio_high(nzo_id):
     # Set priority as described on https://sabnzbd.org/wiki/configuration/4.2/api#priority
     # api?mode=queue&name=priority&value=NZO_ID&value2=0 with 1 = High Priority
 
-    global loggingtext
-    loggingtext += [f"setting prio of {filename} to High"]
-
     # create URL for setting prio of nzo_id to High
     api_url_prioset = f"{api_url_queue}&name=priority&value={nzo_id}&value2=1"
 
     # do it, 3 times
     result = talk_to_sabnzbd(api_url_prioset)
-    loggingtext += [f"result of priosetting: {result}"]
+    return f"result of priosetting: {result}"
 
+    '''
     result = talk_to_sabnzbd(api_url_prioset)
     loggingtext += [f"result of priosetting: {result}"]
 
     result = talk_to_sabnzbd(api_url_prioset)
     loggingtext += [f"result of priosetting: {result}"]
+    '''
 
 
 # MAIN
@@ -96,7 +95,9 @@ else:
             priority = queueitem['priority']
             loggingtext += [f"found {filename} as downloading, with priority {priority}"]
             if priority == 'Normal' and percentage > 5.0:
-                set_prio_high(nzo_id)
+                loggingtext += [f"setting prio of {filename} to High"]
+                result = set_prio_high(nzo_id)
+                loggingtext += [result]
             break  # done; we found the Downloading item, and handled it
 
 # Just accept this NZB, with these 7 output parameters
