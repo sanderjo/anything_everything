@@ -39,7 +39,7 @@ except:
     baseurl = baseurl + "sabnzbd/api"  # do NOT edit
 
 
-# global
+# more global
 api_url_queue = f"{baseurl}?output=json&apikey={apikey}&mode=queue" # default: GET queue
 loggingtext = ['Logging from script']
 
