@@ -1,5 +1,27 @@
 #!/usr/bin/env python3
 
+
+'''
+SABnzbd pre-queue (aka pre-processing) script to set already Downloading item to prio High.
+This avoids that SABnzbd's automatic pushes suchs an item back into the queue
+
+Usage:
+Create a SABnzbd script directory
+Put this script in that directory. Make it executable. If SAB < 4.3.0: Edit the two indicated lines
+As a test, run it directly from that directory (with SABnzbd running)
+
+If that works, in SABnzbd:
+Define script directory in http://127.0.0.1:8080/sabnzbd/config/folders/#script_dir
+Define pre-queue script: http://127.0.0.1:8080/sabnzbd/config/switches/#pre_script
+
+Done!
+
+
+Note
+Via http://127.0.0.1:8080/sabnzbd/config/switches/#auto_sort ... you can set sorting to anything you want
+
+'''
+
 import os
 import sys
 import urllib.request
@@ -7,7 +29,7 @@ import json
 
 
 try:
-    # this works for SABnzbd 4.3.0 and higher; automagic values
+    # this works for SABnzbd 4.3.0 and higher; automagic values FTW
     baseurl = os.environ['SAB_API_URL'] # Often 'http://localhost:8080/sabnzbd/api'
     apikey = os.environ['SAB_API_KEY']
 except:
@@ -20,31 +42,6 @@ except:
 # global
 api_url_queue = f"{baseurl}?output=json&apikey={apikey}&mode=queue" # default: GET queue
 loggingtext = ['Logging from script']
-
-
-'''
-SABnzbd pre-queue (aka pre-processing script)
-
-Checks if there is a download with Normal priority & already downloading.
-If so, sets it to High priority, so that it will keep downloading (=goal), no matter the automatic sorting
-
-
-Usage:
-Create a script directory
-Put this script in that directory. Make it executable. If SAB < 4.3.0: Edit the two lines
-As a test, run it directly from that directory
-
-In SABnzbd:
-Define script directory in http://127.0.0.1:8080/sabnzbd/config/folders/#script_dir
-Define pre-queue script: http://127.0.0.1:8080/sabnzbd/config/switches/#pre_script
-
-Done!
-
-
-Note
-Via http://127.0.0.1:8080/sabnzbd/config/switches/#auto_sort ... you can set sorting to anything you want
-
-'''
 
 def talk_to_sabnzbd(sab_url):
     try:
@@ -82,7 +79,7 @@ def set_prio_high(nzo_id):
 
 # get sab queue
 sabnzbd_queue = talk_to_sabnzbd(api_url_queue)
-# parse the queue
+# handle the queue
 if not sabnzbd_queue:
     loggingtext += [f'SABnzbd not reachable on {baseurl}']
 else:
