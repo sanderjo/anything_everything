@@ -1,18 +1,25 @@
 #!/usr/bin/env python3
 
 import os
+import sys
+import urllib.request
+import json
+
+
 try:
     # this works for SABnzbd 4.3.0 and higher; automagic values
-    baseurl = os.environ['SAB_API_URL'] # 'http://localhost:8080/sabnzbd/api'
+    baseurl = os.environ['SAB_API_URL'] # Often 'http://localhost:8080/sabnzbd/api'
     apikey = os.environ['SAB_API_KEY']
 except:
-    # edit these two lines if on SABnzbd < 4.3.0 (or test run from CLI)
+    # edit these two lines if on SABnzbd < 4.3.0, or test run from CLI
     apikey = "f69d7cdb668f4628b4238ff61af0acc8"  # get from http://127.0.0.1:8080/sabnzbd/config/general/#apikey_display
     baseurl = "http://localhost:8080/"
     baseurl = baseurl + "sabnzbd/api"  # do NOT edit
 
-api_url_queue = f"{baseurl}?output=json&apikey={apikey}&mode=queue" # default: GET queue
 
+# global
+api_url_queue = f"{baseurl}?output=json&apikey={apikey}&mode=queue" # default: GET queue
+loggingtext = ['Logging from script']
 
 
 '''
@@ -24,7 +31,7 @@ If so, sets it to High priority, so that it will keep downloading (=goal), no ma
 
 Usage:
 Create a script directory
-Put this script in that directory. Make it executable. Edit the two lines
+Put this script in that directory. Make it executable. If SAB < 4.3.0: Edit the two lines
 As a test, run it directly from that directory
 
 In SABnzbd:
@@ -41,9 +48,7 @@ Via http://127.0.0.1:8080/sabnzbd/config/switches/#auto_sort ... you can set sor
 
 
 
-import sys
-import urllib.request
-import json
+
 
 
 def talk_to_sabnzbd(sab_url):
@@ -59,62 +64,58 @@ def talk_to_sabnzbd(sab_url):
         print("Error:", e)
         return None
 
+def set_prio_high(nzo_id):
+    # Set priority as described on https://sabnzbd.org/wiki/configuration/4.2/api#priority
+    # api?mode=queue&name=priority&value=NZO_ID&value2=0 with 1 = High Priority
+    loggingtext += [f"setting prio of {filename} to High"]
+
+    # create URL for setting prio of nzo_id to High
+    api_url_prioset = f"{api_url_queue}&name=priority&value={nzo_id}&value2=1"
+
+    # do it, 3 times
+    result = talk_to_sabnzbd(api_url_prioset)
+    loggingtext += [f"result of priosetting: {result}"]
+
+    result = talk_to_sabnzbd(api_url_prioset)
+    loggingtext += [f"result of priosetting: {result}"]
+
+    result = talk_to_sabnzbd(api_url_prioset)
+    loggingtext += [f"result of priosetting: {result}"]
+
+
 # MAIN
 
-debug = False
+# get sab queue
+sabnzbd_queue = talk_to_sabnzbd(api_url_queue)
+# parse the queue
+if not sabnzbd_queue:
+    loggingtext += [f'SABnzbd not reachable on {baseurl}']
+else:
+    all_queue_items = sabnzbd_queue['queue']['slots']
+    number_of_items_in_queue = len(all_queue_items)
+    loggingtext += [f'Size of queue is {number_of_items_in_queue}']
+    for queueitem in all_queue_items:
+        if queueitem['status'] == 'Downloading':
+            filename = queueitem['filename']
+            nzo_id = queueitem['nzo_id']
+            percentage = float(queueitem['percentage'])
+            priority = queueitem['priority']
+            loggingtext += [f"found {filename} as downloading, with priority {priority}"]
+            if priority == 'Normal' and percentage > 5.0:
+                set_prio_high
+            break  # done; we found the Downloading item, and handled it
 
-if __name__ == "__main__":
-    loggingtext = ['Logging from script']
-    # get sab queue
-    sabnzbd_queue = talk_to_sabnzbd(api_url_queue)
-    # parse the queue
-    if not sabnzbd_queue:
-        loggingtext += ['SABnzbd not reached']
-    else:
-        all_queue_items = sabnzbd_queue['queue']['slots']
-        number_of_items_in_queue = len(all_queue_items)
-        loggingtext += [f'Size of queue is {number_of_items_in_queue}']
-        for queueitem in all_queue_items:
-            if queueitem['status'] == 'Downloading':
-                filename = queueitem['filename']
-                nzo_id = queueitem['nzo_id']
-                percentage = float(queueitem['percentage'])
-                priority = queueitem['priority']
-                loggingtext += [f"found {filename} as downloading, with priority {priority}"]
-                if priority == 'Normal' and percentage > 5.0:
-                    # Set priority as described on https://sabnzbd.org/wiki/configuration/4.2/api#priority
-                    # api?mode=queue&name=priority&value=NZO_ID&value2=0 with 1 = High Priority
-                    loggingtext += [f"setting prio of {filename} to High"]
+# Just accept this NZB, with these 7 output parameters
+print("1")  # Accept the job
+print()
+print()
+print()
+print()
+print()
+print()
 
-                    # create URL for setting prio of nzo_id to High
-                    api_url_prioset = f"{api_url_queue}&name=priority&value={nzo_id}&value2=1"
-
-                    # do it, 3 times
-                    result = talk_to_sabnzbd(api_url_prioset)
-                    loggingtext += [f"result of priosetting: {result}"]
-
-                    result = talk_to_sabnzbd(api_url_prioset)
-                    loggingtext += [f"result of priosetting: {result}"]
-
-                    result = talk_to_sabnzbd(api_url_prioset)
-                    loggingtext += [f"result of priosetting: {result}"]
-
-
-
-                break  # done; we found the Downloading item, and handled it
-
-
-    # Just accept this NZB with these 7 output parameters
-    print("1")  # Accept the job
-    print()
-    print()
-    print()
-    print()
-    print()
-    print()
-
-    # logging that will land in sabnzbd.log (ignored by SABnzbd itself):
-    for i in loggingtext:
-        print("pre-queue script:", i)
-    sys.exit(0)
+# logging that will land in sabnzbd.log (ignored by SABnzbd itself):
+for i in loggingtext:
+    print("pre-queue script:", i)
+sys.exit(0)
 
