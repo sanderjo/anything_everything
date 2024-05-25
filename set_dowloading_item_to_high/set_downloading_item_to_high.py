@@ -41,6 +41,9 @@ except:
 
 # more global
 api_url_queue = f"{baseurl}?output=json&apikey={apikey}&mode=queue" # default: GET queue
+
+print(api_url_queue)
+
 loggingtext = ['Logging from script']
 
 def talk_to_sabnzbd(sab_url):
