@@ -43,6 +43,10 @@ except:
     print("Specify file")
     sys.exit(1)
 
+if not os.path.isfile(file):
+    print(f"{file} is not a file")
+    sys.exit(1)
+
 if not check_if_riscv_binary(file):
     print(f"{file} is not a risc-v binary")
     sys.exit(1)
