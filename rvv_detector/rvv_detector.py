@@ -34,8 +34,11 @@ debug = False
 def check_if_riscv_binary(file):
     # ELF 64-bit LSB executable, UCB RISC-V
     # ELF 64-bit LSB shared object, UCB RISC-V
-    magic_output = magic.from_file(file)
-    return "ELF 64-bit" in magic_output and "RISC-V" in magic_output
+    try:
+        magic_output = magic.from_file(file)
+        return "ELF 64-bit" in magic_output and "RISC-V" in magic_output
+    except:
+        return False
 
 try:
     file = sys.argv[1]
