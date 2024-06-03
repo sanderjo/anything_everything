@@ -40,6 +40,7 @@ def check_if_riscv_binary(file):
     except:
         return False
 
+
 try:
     file = sys.argv[1]
 except:
