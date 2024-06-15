@@ -40,11 +40,12 @@ def check_if_riscv_binary(file):
     except:
         return False
 
+# MAIN
 
 try:
     file = sys.argv[1]
 except:
-    print("Specify file")
+    print("Specify file or directory")
     sys.exit(1)
 
 if not os.path.isfile(file):
