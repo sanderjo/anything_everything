@@ -38,10 +38,12 @@ except:
     print("Error: specify directory")
     sys.exit(-1)
 
+# find largest file, including in subdirs
 largest_file = max(
     (os.path.join(root, file) for root, dirs, files in os.walk(directory) for file in files),
     key=os.path.getsize
 )
+
 
 prio = 0  # default
 if largest_file.lower().endswith(".mkv"):
