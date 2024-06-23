@@ -59,7 +59,7 @@ elif largest_file.lower().endswith(".bin"):
 else:
     comment = "Nothing special"
 
-print(prio)
-print(largest_file)
-print(comment)
+print(prio) # first line is the prio decisions towards SABnzbd
+print(largest_file) # the file we considered
+print(comment) # comment for humans: why, what
 
