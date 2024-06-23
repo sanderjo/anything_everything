@@ -51,7 +51,7 @@ if largest_file.lower().endswith(".mkv"):
         prio = 1
     else:
         comment = "MKV, no subs"
-        prio = -1  # or 0 ...
+        prio = -1  # or 0 or -2 ...
 elif largest_file.lower().endswith(".bin"):
     # my testfile
     comment = "a bin, so maybe the testfile"
@@ -59,7 +59,7 @@ elif largest_file.lower().endswith(".bin"):
 else:
     comment = "Nothing special"
 
-print(prio)
-print(largest_file)
-print(comment)
+print(prio) # first line is the prio decisions towards SABnzbd
+print(largest_file) # the file we considered
+print(comment) # comment for humans: why, what
 
